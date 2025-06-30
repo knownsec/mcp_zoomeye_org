@@ -6,21 +6,6 @@ A Model Context Protocol (MCP) server that provides network asset information ba
 
 🎉 We are excited to announce the official open-source release of **ZoomEye MCP Server** — a powerful Model Context Protocol (MCP) server that brings real-time cyber asset intelligence to AI assistants and development environments.
 
-🚀 Free Trial: 7-Day FREE Access to ZoomEye MCP!
-Experience ZoomEye MCP — the AI-powered cyberspace asset search engine — absolutely free for 7 days!
-
-🔍 Search global internet assets, track real-time changes, and unlock AI-driven insights — all in one place.
-
-👉 How to claim:
-
-1. Follow us on Twitter: [@zoomeye_team](https://x.com/zoomeye_team)
-2. DM us "MCP" and your MCP setup screenshot
-3. Get instant access to your 7-day membership
-
-🎁 Limited-time free trial — explore the power of AI asset search today!
-
-💡 Provide insightful feedback that gets officially adopted, and you'll unlock **even more rewards**!
-
 🔧 Fully compatible with leading MCP environments:
 
 - Claude Desktop
@@ -32,17 +17,6 @@ Experience ZoomEye MCP — the AI-powered cyberspace asset search engine — abs
 - Cherry Studio
 - Chatbox
 
-🔗 Explore ZoomEye MCP Server on:
-
-- GitHub: [knownsec/mcp_zoomeye_org](https://github.com/knownsec/mcp_zoomeye_org)
-- MCP.so: [mcp.so/server/mcp_zoomeye](https://mcp.so/server/mcp_zoomeye/zoomeye-ai)
-- Smithery: [smithery.ai/server/@zoomeye-ai/mcp_zoomeye](https://smithery.ai/server/@zoomeye-ai/mcp_zoomeye)
-- Cursor Directory: [cursor.directory/mcp/zoomeye](https://cursor.directory/mcp/zoomeye)
-- Pulse MCP: [pulsemcp.com/servers/zoomeye](https://www.pulsemcp.com/servers/zoomeye)
-- Glama MCP: [glama.ai/mcp/servers](https://glama.ai/mcp/servers)
-
-We welcome everyone to use, explore, and contribute!
-
 ## 🔑 How can I get a ZoomEye API key?
 
 To use this MCP server, you’ll need a ZoomEye API key.
@@ -52,7 +26,7 @@ To use this MCP server, you’ll need a ZoomEye API key.
 3. Click your avatar → **Profile**
 4. Copy your **API-KEY**
 5. Set the environment variable:
-   
+
    `export ZOOMEYE_API_KEY="your_api_key_here"`
 
 ![zoomeye1](./zoomeye1.png)
@@ -69,15 +43,15 @@ To use this MCP server, you’ll need a ZoomEye API key.
 ## Available Tools
 
 - `zoomeye_search` - Get network asset information based on query conditions.
-  - Required parameters:
-    - `qbase64` (string): Base64 encoded query string for ZoomEye search
-  - Optional parameters:
-    - `page` (integer): View asset page number, default is 1
-    - `pagesize` (integer): Number of records per page, default is 10, maximum is 1000
-    - `fields` (string): The fields to return, separated by commas
-    - `sub_type` (string): Data type, supports v4, v6, and web. Default is v4
-    - `facets` (string): Statistical items, separated by commas if there are multiple
-    - `ignore_cache` (boolean): Whether to ignore the cache
+    - Required parameters:
+        - `qbase64` (string): Base64 encoded query string for ZoomEye search
+    - Optional parameters:
+        - `page` (integer): View asset page number, default is 1
+        - `pagesize` (integer): Number of records per page, default is 10, maximum is 1000
+        - `fields` (string): The fields to return, separated by commas
+        - `sub_type` (string): Data type, supports v4, v6, and web. Default is v4
+        - `facets` (string): Statistical items, separated by commas if there are multiple
+        - `ignore_cache` (boolean): Whether to ignore the cache
 
 ## Usage Guide
 
@@ -112,14 +86,14 @@ For more information on the ZoomEye Search API, refer to the [ZoomEye API v2 doc
 ### Prerequisites
 
 1. **ZoomEye API Key**
-   
-   - Register for an account at [ZoomEye](https://www.zoomeye.org/)
-   - Obtain your API key from your account settings
-   - The API key will be used to authenticate your requests to the ZoomEye API
+
+    - Register for an account at [ZoomEye](https://www.zoomeye.org/)
+    - Obtain your API key from your account settings
+    - The API key will be used to authenticate your requests to the ZoomEye API
 2. **Python Environment**
-   
-   - Python 3.10 or higher is required
-   - Alternatively, you can use Docker to run the server without installing Python
+
+    - Python 3.10 or higher is required
+    - Alternatively, you can use Docker to run the server without installing Python
 
 ## Installation
 
@@ -182,7 +156,7 @@ The ZoomEye MCP server requires the following environment variable:
 You can set this environment variable in several ways:
 
 1. **Export in your shell session**:
-   
+
    ```bash
    export ZOOMEYE_API_KEY="your_api_key_here"
    ```
@@ -196,13 +170,13 @@ Add the following in Claude settings:
 
 ```json
 "mcpServers": {
-  "zoomeye": {
-    "command": "uvx",
-    "args": ["mac-zoomeye-org"],
-    "env": {
-        "ZOOMEYE_API_KEY": "your_api_key_here"
-    }
-  }
+"zoomeye": {
+"command": "uvx",
+"args": ["mac-zoomeye-org"],
+"env": {
+"ZOOMEYE_API_KEY": "your_api_key_here"
+}
+}
 }
 ```
 
@@ -214,13 +188,13 @@ Add the following in Claude settings:
 
 ```json
 "mcpServers": {
-  "zoomeye": {
-    "command": "python",
-    "args": ["-m", "mcp_server_zoomeye"],
-    "env": {
-        "ZOOMEYE_API_KEY": "your_api_key_here"
-    }
-  }
+"zoomeye": {
+"command": "python",
+"args": ["-m", "mcp_server_zoomeye"],
+"env": {
+"ZOOMEYE_API_KEY": "your_api_key_here"
+}
+}
 }
 ```
 
@@ -235,13 +209,13 @@ Add the following in Zed's settings.json:
 
 ```json
 "context_servers": [
-  "mac-zoomeye-org": {
-    "command": "uvx",
-    "args": ["mac-zoomeye-org"],
-    "env": {
-        "ZOOMEYE_API_KEY": "your_api_key_here"
-    }
-  }
+"mac-zoomeye-org": {
+"command": "uvx",
+"args": ["mac-zoomeye-org"],
+"env": {
+"ZOOMEYE_API_KEY": "your_api_key_here"
+}
+}
 ],
 ```
 
@@ -252,13 +226,13 @@ Add the following in Zed's settings.json:
 
 ```json
 "context_servers": {
-  "mac-zoomeye-org": {
-    "command": "python",
-    "args": ["-m", "mcp_server_zoomeye"],
-    "env": {
-        "ZOOMEYE_API_KEY": "your_api_key_here"
-    }
-  }
+"mac-zoomeye-org": {
+"command": "python",
+"args": ["-m", "mcp_server_zoomeye"],
+"env": {
+"ZOOMEYE_API_KEY": "your_api_key_here"
+}
+}
 },
 ```
 
@@ -352,21 +326,21 @@ npx @modelcontextprotocol/inspector uv run mac-zoomeye-org
 ### Common Issues
 
 1. **Authentication Errors**
-   
-   - Ensure your ZoomEye API key is correct and properly set as an environment variable
-   - Check that your API key has not expired or been revoked
+
+    - Ensure your ZoomEye API key is correct and properly set as an environment variable
+    - Check that your API key has not expired or been revoked
 2. **Connection Issues**
-   
-   - Verify your internet connection
-   - Check if the ZoomEye API is experiencing downtime
+
+    - Verify your internet connection
+    - Check if the ZoomEye API is experiencing downtime
 3. **No Results**
-   
-   - Your query might be too specific or contain syntax errors
-   - Try simplifying your query or using different search terms
+
+    - Your query might be too specific or contain syntax errors
+    - Try simplifying your query or using different search terms
 4. **Rate Limiting**
-   
-   - ZoomEye API has rate limits based on your account type
-   - Space out your requests or upgrade your account for higher limits
+
+    - ZoomEye API has rate limits based on your account type
+    - Space out your requests or upgrade your account for higher limits
 
 ## Advanced Usage
 

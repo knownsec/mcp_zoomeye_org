@@ -1,4 +1,4 @@
-# 🚀 ZoomEye MCP 服务器
+ 🚀 ZoomEye MCP 服务器
 
 一个模型上下文协议（Model Context Protocol，MCP）服务器，基于查询条件提供网络资产信息。该服务器允许大型语言模型（LLMs）通过使用 ZoomEye 的 dorks 和其他搜索参数来获取网络资产信息。
 
@@ -9,14 +9,6 @@
  
 
 🔍 搜索全球互联网资产，追踪实时变化，解锁 AI 驱动的洞察 — 一站式服务。
-
-👉 如何申请：
-
-1. 在 Twitter 上关注我们：[@zoomeye_team](https://x.com/zoomeye_team)
-2. 私信我们 "MCP" 和您的 MCP 设置截图
-3. 立即获得 7 天会员资格
-
-🎁 限时免费试用 — 立即探索 AI 资产搜索的强大功能！
 
 💡 提供被官方采纳的有见地的反馈，您将解锁**更多奖励**！
 
@@ -30,17 +22,6 @@
 - Zed
 - Cherry Studio
 - Chatbox
-
-🔗 在以下平台探索 ZoomEye MCP 服务器：
-
-- GitHub: [knownsec/mcp_zoomeye_org](https://github.com/knownsec/mcp_zoomeye_org)
-- MCP.so: [mcp.so/server/mcp_zoomeye](https://mcp.so/server/mcp_zoomeye/zoomeye-ai)
-- Smithery: [smithery.ai/server/@zoomeye-ai/mcp_zoomeye](https://smithery.ai/server/@zoomeye-ai/mcp_zoomeye)
-- Cursor Directory: [cursor.directory/mcp/zoomeye](https://cursor.directory/mcp/zoomeye)
-- Pulse MCP: [pulsemcp.com/servers/zoomeye](https://www.pulsemcp.com/servers/zoomeye)
-- Glama MCP: [glama.ai/mcp/servers](https://glama.ai/mcp/servers)
-
-我们欢迎所有人使用、探索和贡献！
 
 ## 🔑 如何获取 ZoomEye API 密钥？
 
