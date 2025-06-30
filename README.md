@@ -128,7 +128,7 @@ irm https://astral.sh/uv/install.ps1 | iex
 brew install uv
 ```
 
-#### Using uvx to run mac-zoomeye-org
+#### Using uvx to run mcp-zoomeye-org
 
 No specific installation is required when using [`uvx`](https://docs.astral.sh/uv/guides/tools/), which allows you to run Python packages directly:
 
@@ -138,11 +138,11 @@ Alternatively, you can install the package using uv:
 
 ```bash
 # Install in the current environment
-uv pip install mac-zoomeye-org
+uv pip install mcp-zoomeye-org
 
 # Or create and install in a new virtual environment
 uv venv
-uv pip install mac-zoomeye-org
+uv pip install mcp-zoomeye-org
 ```
 
 ## Configuration
@@ -172,7 +172,7 @@ Add the following in Claude settings:
 "mcpServers": {
 "zoomeye": {
 "command": "uvx",
-"args": ["mac-zoomeye-org"],
+"args": ["mcp-zoomeye-org"],
 "env": {
 "ZOOMEYE_API_KEY": "your_api_key_here"
 }
@@ -209,9 +209,9 @@ Add the following in Zed's settings.json:
 
 ```json
 "context_servers": [
-"mac-zoomeye-org": {
+"mcp-zoomeye-org": {
 "command": "uvx",
-"args": ["mac-zoomeye-org"],
+"args": ["mcp-zoomeye-org"],
 "env": {
 "ZOOMEYE_API_KEY": "your_api_key_here"
 }
@@ -226,7 +226,7 @@ Add the following in Zed's settings.json:
 
 ```json
 "context_servers": {
-"mac-zoomeye-org": {
+"mcp-zoomeye-org": {
 "command": "python",
 "args": ["-m", "mcp_server_zoomeye"],
 "env": {
@@ -316,11 +316,11 @@ The Model Context Protocol Inspector is a tool that helps debug MCP servers by s
 
 ```bash
 # For uvx installation
-npx @modelcontextprotocol/inspector uvx mac-zoomeye-org
+npx @modelcontextprotocol/inspector uvx mcp-zoomeye-org
 
 # If developing locally
 cd path/to/servers/src/mcp_server_zoomeye
-npx @modelcontextprotocol/inspector uv run mac-zoomeye-org
+npx @modelcontextprotocol/inspector uv run mcp-zoomeye-org
 ```
 
 ### Common Issues
@@ -383,13 +383,13 @@ For queries that return many results, you can paginate through them:
 
 ## Contributing
 
-We encourage contributions to mac-zoomeye-org to help expand and improve its functionality. Whether it's adding new related tools, enhancing existing features, or improving documentation, your input is valuable.
+We encourage contributions to mcp-zoomeye-org to help expand and improve its functionality. Whether it's adding new related tools, enhancing existing features, or improving documentation, your input is valuable.
 
 For examples of other MCP servers and implementation patterns, see:
 https://github.com/modelcontextprotocol/servers
 
-Pull requests are welcome! Feel free to contribute new ideas, bug fixes, or enhancements to make mac-zoomeye-org more robust and practical.
+Pull requests are welcome! Feel free to contribute new ideas, bug fixes, or enhancements to make mcp-zoomeye-org more robust and practical.
 
 ## License
 
-mac-zoomeye-org is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more information, see the LICENSE file in the project repository.
+mcp-zoomeye-org is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more information, see the LICENSE file in the project repository.
