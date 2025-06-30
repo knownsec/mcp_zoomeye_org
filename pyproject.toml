@@ -1,0 +1,39 @@
+[project]
+name = "mcp-zoomeye-org"
+version = "0.1.0"
+description = "A Model Context Protocol server providing tools for ZoomEye queries for LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "zoomeye team", email = "zoomeye@knownsec.com" },
+]
+keywords = ["zoomeye", "mcp", "llm"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.32.3",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mcp-zoomeye-org = "mcp_zoomeye_org:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pyright>=1.1.389",
+    "pytest>=8.3.3",
+    "pytest-asyncio>=0.25.3",
+    "ruff>=0.8.1",
+]
