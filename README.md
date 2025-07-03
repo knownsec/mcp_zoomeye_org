@@ -1,3 +1,10 @@
+<div align="center">
+  
+  <a href="https://github.com/knownsec/mcp_zoomeye_org/blob/main/README.md">`English`</a> •
+  <a href="https://github.com/knownsec/mcp_zoomeye_org/blob/main/README_zh.md">`中文`</a> 
+  
+</div>
+
 # 🚀 ZoomEye MCP Server
 
 A Model Context Protocol (MCP) server that provides network asset information based on query conditions. This server allows Large Language Models (LLMs) to obtain network asset information by querying ZoomEye using dorks and other search parameters.
